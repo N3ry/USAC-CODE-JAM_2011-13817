@@ -1,6 +1,6 @@
 codigo-diagramas
 ================
-Adividna el numero.java
+Adividnaelnumero.java
 
 Palindromos.java
 
