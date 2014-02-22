@@ -1,0 +1,25 @@
++	import java.util.*; 
++	public class Azar { 
++	    public static void main (String args[]) { 
++	        Scanner sc = new Scanner(System.in); 
++	        Random rn = new Random(); 
++	        int n1, n2, i; 
++	        n1 = rn.nextInt(100); //Numero elegido al azar 
++	        i = 5; //Oportunidades 
++	        System.out.println ("Adivina el numero"); 
++	        do { 
++	            System.out.println ("\n"+"Oportunidades: "+i); 
++	            System.out.println ("Escribe numero"); 
++	            n2 = sc.nextInt(); //Numero proporcionado por el usuario 
++	            i = i - 1; 
++	            if ( i == 0) { 
++	                System.out.println ("\n"+"Se terminaron las oprtunidades"); 
++	                System.out.println ("El numero fue: "+n1); 
++	                break; 
++	            } 
++	        } while (n2 != n1); 
++	        if (i > 0 ) { 
++	            System.out.println ("Felicidades lo adivinaste"); 
++	        } 
++	    } 
++	} 
