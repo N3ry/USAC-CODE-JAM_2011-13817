@@ -1,0 +1,24 @@
+import java.util.*; 
+import java.io.*; 
+
+public class palindromo
+{ 
+static boolean isPalindromo(String palabra) 
+{ 
+StringBuffer aux = new StringBuffer(palabra).reverse(); 
+
+return palabra.equals(aux.toString()); 
+} 
+
+public static void main(String args[]) 
+{ 
+BufferedReader in = new BufferedReader(new InputStreamReader(System.in)); 
+
+System.out.print("introduzca palabra: "); 
+String palabra = null; 
+try { palabra = in.readLine();} 
+catch (Exception e) {} 
+if(isPalindromo(palabra)) System.out.println(palabra + "Palabra introducida :) si es palindromo "); 
+else System.out.println(palabra + "Palabra introducida :( no es palindromo "); 
+} 
+} 
